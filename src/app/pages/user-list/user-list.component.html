@@ -1,0 +1,86 @@
+<div class="user-list">
+  <h3 class="user-list-title">User List</h3>
+  <table class="user-list-table">
+    <tr class="user-list-tr">
+      <th class="user-list-th">ID</th>
+      <th class="user-list-th">User</th>
+      <th class="user-list-th">Email</th>
+      <th class="user-list-th">Status</th>
+      <th class="user-list-th">Transactions</th>
+      <th class="user-list-th">Actions</th>
+    </tr>
+    <tr class="user-list-tr" *ngFor="let useritem of userList">
+      <td>{{ useritem.id }}</td>
+      <td class="user-list-user">
+        <img [src]="useritem.image" alt="User Image" class="user-list-img">
+        <span class="user-list-name">{{ useritem.name }}</span>
+      </td>
+      <td class="user-list-date">{{ useritem.email }}</td>
+      <td class="user-list-amount">{{ useritem.status }}</td>
+      <td class="user-list-amount">{{ useritem.transaction | currency }}</td>
+      
+      <td class="user-list-status">
+        <span class="material-icons user-list-edit" routerLink="/user/{{ useritem.id }}">
+          edit
+          </span>
+        <span class="material-icons user-list-delete" (click)="deleteUser(useritem.id)">
+          delete
+        </span>
+      </td>
+    </tr>
+    <!-- <tr class="user-list-tr">
+      <td>1</td>
+      <td class="user-list-user">
+        <img src="../../../assets/images/portraitImg.jpg" alt="User Image" class="user-list-img">
+        <span class="user-list-name">Suzan Karol</span>
+      </td>
+      <td class="user-list-date">braindona@gmail.com</td>
+      <td class="user-list-amount">active</td>
+      <td class="user-list-amount">$ 2,44879</td>
+      
+      <td class="user-list-status">
+        <span class="material-icons user-list-edit">
+          edit
+          </span>
+        <span class="material-icons user-list-delete">
+          delete
+        </span>
+      </td>
+    </tr>
+    <tr class="user-list-tr">
+      <td>1</td>
+      <td class="user-list-user">
+        <img src="../../../assets/images/portraitImg.jpg" alt="User Image" class="user-list-img">
+        <span class="user-list-name">Suzan Karol</span>
+      </td>
+      <td class="user-list-date">braindona@gmail.com</td>
+      <td class="user-list-amount">active</td>
+      <td class="user-list-amount">$ 2,44879</td>
+      
+      <td class="user-list-status">
+        <span class="material-icons user-list-edit">
+          edit
+          </span>
+        <span class="material-icons user-list-delete">
+          delete
+        </span>
+      </td>
+    </tr> -->
+    <!-- <tr class="user-list-tr">
+      <td class="user-list-user">
+        <img src="../../../assets/images/portraitImg.jpg" alt="User Image" class="user-list-img">
+        <span class="user-list-name">Suzan Karol</span>
+      </td>
+      <td class="user-list-date">4 Dec 2022</td>
+      <td class="user-list-amount">$ 20,202</td>
+    </tr>
+    <tr class="user-list-tr">
+      <td class="user-list-user">
+        <img src="../../../assets/images/portraitImg.jpg" alt="User Image" class="user-list-img">
+        <span class="user-list-name">Suzan Karol</span>
+      </td>
+      <td class="user-list-date">4 Dec 2022</td>
+      <td class="user-list-amount">$ 20,202</td>
+    </tr> -->
+  </table>
+</div>

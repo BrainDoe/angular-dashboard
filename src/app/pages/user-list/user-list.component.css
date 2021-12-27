@@ -1,0 +1,54 @@
+.user-list {
+  flex: 4;
+  width: 100%;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.user-list-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.user-list-th {
+  text-align: left;
+}
+
+.user-list-table {
+  width: 100%;
+  border-spacing: 43px;
+}
+
+.user-list-user {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.user-list-img{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-list-date, 
+.user-list-amount {
+  font-weight: 300;
+  color: #8989a0;
+}
+
+.user-list-edit {
+  font-size: 25px;
+  color: green;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.user-list-delete {
+  font-size: 25px;
+  color: orangered;
+  cursor: pointer;
+}

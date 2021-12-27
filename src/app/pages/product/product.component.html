@@ -1,0 +1,64 @@
+<div class="product">
+  <div class="product-title-container">
+    <h1 class="product-title">Product</h1>
+    <button class="product-add-button" routerLink="/newproduct">Create</button>
+  </div>
+  <div class="product-top">
+    <div class="product-top-left">
+      <app-chart></app-chart>
+      Chart To be Implemented Here
+    </div>
+    <div class="product-top-right">
+      <div class="product-info-top">
+        <img src="../../../assets/images/portraitImg.jpg" alt="Image" class="product-info-img">
+        <span class="product-name">Apple airpod</span>
+      </div>
+      <div class="product-info-bottom">
+        <div class="product-info-item">
+          <span class="product-info-key">id: </span>
+          <span class="product-info-value">123</span>
+        </div>
+        <div class="product-info-item">
+          <span class="product-info-key">sales: </span>
+          <span class="product-info-value">123</span>
+        </div>
+        <div class="product-info-item">
+          <span class="product-info-key">active: </span>
+          <span class="product-info-value">yes</span>
+        </div>
+        <div class="product-info-item">
+          <span class="product-info-key">stock: </span>
+          <span class="product-info-value">123</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-bottom">
+    <form class="product-form">
+      <div class="product-form-left">
+        <label for="productname">Product Name</label>
+        <input type="text" name="productname" id="productname" placeholder="Apple Airpod">
+        <label for="instock">In Stock</label>
+        <select name="instock" id="instock">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+        <label for="active">Active</label>
+        <select name="active" id="active">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div class="product-form-right">
+        <div class="product-upload">
+          <img src="../../../assets/images/portraitImg.jpg" alt="" class="product-upload-img">
+          <label for="file">
+            <span class="material-icons">publish</span>
+          </label>
+          <input type="file" name="file" id="file" style="display: none;">
+        </div>
+        <button class="product-button">Update</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,86 @@
+<div class="product-list">
+  <h3 class="product-list-title">Product List</h3>
+  <table class="product-list-table">
+    <tr class="product-list-tr">
+      <th class="product-list-th">ID</th>
+      <th class="product-list-th">Product</th>
+      <th class="product-list-th">Stock</th>
+      <th class="product-list-th">Status</th>
+      <th class="product-list-th">Price</th>
+      <th class="product-list-th">Actions</th>
+    </tr>
+    <tr class="product-list-tr" *ngFor="let productItem of productList">
+      <td>{{ productItem.id }}</td>
+      <td class="product-list-user">
+        <img [src]="productItem.image" alt="User Image" class="product-list-img">
+        <span class="product-list-name">{{ productItem.product }}</span>
+      </td>
+      <td class="product-list-date">{{ productItem.stock }}</td>
+      <td class="product-list-amount">{{ productItem.status }}</td>
+      <td class="product-list-amount">{{ productItem.price | currency }}</td>
+      
+      <td class="product-list-status">
+        <span class="material-icons product-list-edit" routerLink="/product/{{ productItem.id }}">
+          edit
+          </span>
+        <span class="material-icons product-list-delete" (click)="deleteProduct(productItem.id)">
+          delete
+        </span>
+      </td>
+    </tr>
+    <!-- <tr class="product-list-tr">
+      <td>1</td>
+      <td class="product-list-user">
+        <img src="../../../assets/images/portraitImg.jpg" alt="User Image" class="product-list-img">
+        <span class="product-list-name">Suzan Karol</span>
+      </td>
+      <td class="product-list-date">braindona@gmail.com</td>
+      <td class="product-list-amount">active</td>
+      <td class="product-list-amount">$ 2,44879</td>
+      
+      <td class="product-list-status">
+        <span class="material-icons product-list-edit">
+          edit
+          </span>
+        <span class="material-icons product-list-delete">
+          delete
+        </span>
+      </td>
+    </tr>
+    <tr class="product-list-tr">
+      <td>1</td>
+      <td class="product-list-user">
+        <img src="../../../assets/images/portraitImg.jpg" alt="User Image" class="product-list-img">
+        <span class="product-list-name">Suzan Karol</span>
+      </td>
+      <td class="product-list-date">braindona@gmail.com</td>
+      <td class="product-list-amount">active</td>
+      <td class="product-list-amount">$ 2,44879</td>
+      
+      <td class="product-list-status">
+        <span class="material-icons product-list-edit">
+          edit
+          </span>
+        <span class="material-icons product-list-delete">
+          delete
+        </span>
+      </td>
+    </tr> -->
+    <!-- <tr class="product-list-tr">
+      <td class="product-list-user">
+        <img src="../../../assets/images/portraitImg.jpg" alt="User Image" class="product-list-img">
+        <span class="product-list-name">Suzan Karol</span>
+      </td>
+      <td class="product-list-date">4 Dec 2022</td>
+      <td class="product-list-amount">$ 20,202</td>
+    </tr>
+    <tr class="product-list-tr">
+      <td class="product-list-user">
+        <img src="../../../assets/images/portraitImg.jpg" alt="User Image" class="product-list-img">
+        <span class="product-list-name">Suzan Karol</span>
+      </td>
+      <td class="product-list-date">4 Dec 2022</td>
+      <td class="product-list-amount">$ 20,202</td>
+    </tr> -->
+  </table>
+</div>

@@ -1,0 +1,54 @@
+.product-list {
+  flex: 4;
+  width: 130%;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.product-list-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.product-list-th {
+  text-align: left;
+}
+
+.product-list-table {
+  width: 100%;
+  border-spacing: 43px;
+}
+
+.product-list-user {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.product-list-img{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.product-list-date, 
+.product-list-amount {
+  font-weight: 300;
+  color: #8989a0;
+}
+
+.product-list-edit {
+  font-size: 25px;
+  color: green;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.product-list-delete {
+  font-size: 25px;
+  color: orangered;
+  cursor: pointer;
+}

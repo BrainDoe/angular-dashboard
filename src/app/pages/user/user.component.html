@@ -1,0 +1,76 @@
+<div class="user">
+  <div class="user-title-container">
+    <h1 class="user-title">Edit User</h1>
+    <button class="user-add-button" routerLink="/newuser">Create</button>
+  </div>
+  <div class="user-container">
+    <div class="user-show">
+      <div class="user-show-top">
+        <img src="../../../assets/images/portraitImg.jpg" alt="Profile Picture" class="user-show-img">
+        <div class="user-show-top-title">
+          <span class="user-show-username">Anna Becker</span>
+          <span class="user-showtitle">Software Engineer</span>
+        </div>
+      </div>
+      <div class="user-show-bottom">
+        <span class="user-show-title">Account Details</span>
+        <div class="user-show-info">
+          <span class="material-icons user-show-icon">user</span>
+          <span class="user-show-info-title">annabeck</span>
+        </div>
+        <div class="user-show-info">
+          <span class="material-icons user-show-icon">calendar_today</span>
+          <span class="user-show-info-title">10.11.2020</span>
+        </div>
+        <span class="user-show-title">Contact Details</span>
+        <div class="user-show-info">
+          <span class="material-icons user-show-icon">smartphone</span>
+          <span class="user-info-title">081847374847</span>
+        </div>
+        <div class="user-show-info">
+          <span class="material-icons user-show-icon">mail</span>
+          <span class="user-info-title">becky@gmail.com</span>
+        </div>
+        <div class="user-show-info">
+          <span class="material-icons user-show-icon">my_location</span>
+          <span class="user-info-title">Benin City | Nigeria</span>
+        </div>
+      </div>
+    </div>
+    <div class="user-update">
+      <span class="user-update-title">Edit</span>
+      <form class="user-update-form">
+        <div class="user-update-left">
+          <div class="user-update-item">
+            <label>Username</label>
+            <input type="text" name="username" id="username" placeholder="annabecky" class="user-update-input">
+          </div>
+          <div class="user-update-item">
+            <label>Full Name</label>
+            <input type="text" name="fullname" id="fullname" placeholder="Anna Becky" class="user-update-input">
+          </div>
+          <div class="user-update-item">
+            <label>Email</label>
+            <input type="email" name="email" id="email" placeholder="annabeck@gmail.com" class="user-update-input">
+          </div>
+          <div class="user-update-item">
+            <label>Phone</label>
+            <input type="text" name="phone" id="phone" placeholder="082425364455" class="user-update-input">
+          </div>
+          <div class="user-update-item">
+            <label>Address</label>
+            <input type="test" name="address" id="address" placeholder="Benin City | Nigeria" class="user-update-input">
+          </div>
+        </div>
+        <div class="user-update-right">
+          <div class="user-update-upload">
+            <img src="../../../assets/images/portraitImg.jpg" alt="Profile Picture" class="user-upload-img">
+            <label for="file"><span class="material-icons  user-update-icon">publish</span></label>
+            <input type="file" name="file" id="file" style="display: none;">
+          </div>
+          <button class="user-update-button">Update</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
